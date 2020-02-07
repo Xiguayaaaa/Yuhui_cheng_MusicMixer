@@ -1,0 +1,107 @@
+html
+{
+  font-family: ;
+  font-size: ;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#reset
+{
+  background: url(../images/reset.png) center no-repeat;
+  width: 80px;
+  height: 80px;
+  border: none;
+  background-size: cover;
+  position: relative;
+}
+
+#popup
+{
+ background: url(../images/information.png) center no-repeat;
+ background-size: cover;
+ width: 80px;
+ height: 80px;
+ position: relative;
+ border: none;
+}
+
+#reset:hover, #popup:hover
+{
+    cursor: pointer;
+}
+
+.popupmenu
+{
+  width: 60%;
+  height: auto;
+  position: fixed;
+  top: 10%;
+  background-color: inherit;
+  display: none;
+  text-align: center;
+}
+
+.popupmenu h1
+{
+  font-size: 5em;
+  color: inherit;
+  margin: 0 auto;
+}
+
+.popupmenu h2
+{
+  font-size: 3.5em;
+}
+
+.popupmenu
+{
+  font-size: 2em;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.closebox{
+  float: right;
+  font-size: 50px;
+  margin: 10px 10px 0px 0px;
+  color: #aaaaaa;
+}
+
+main
+{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#grid
+{
+  margin: 0 auto;
+}
+
+#original-area
+{
+  width: 400px;
+  position: absolute;
+  display: flex;
+  top: 250px;
+  margin: 0 auto;
+  left: 43.6%;
+}
+
+.zodiac-signs
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  padding: 0;
+  margin-top: -160px;
+}
+
+.zodiac-signs img
+{
+  padding-right: 5px;
+  margin-top: 3px;
+}
