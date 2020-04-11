@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
-    <title>Music Mixer</title>
-  </head>
+	<title>Music Mixer</title>
+</head>
 
-  <body>
-
-    <button id="reset"></button>
-    <button id="popup"></button>
-    <div class="popupmenu">
-      <a href="#" class="closebox"><i class="fas fa-times-circle"></i></a>
-      <h1>Musical Zodiac signs <br>By Yuhui Cheng</h1>
-      <h2>Game introduction:</h2>
-      <ul>
-        <li>1. Choose the animal which you like.</li>
-        <li>2. Drag chosen animal to the cloud.</li>
-        <li>3. Listen and enjoy it.</li>
-        <li>Reset: Use the the button on the top left.</li>
-      </ul>
-    </div>
+<body>
+  <button id="reset"></button>
+  <button id="popup"></button>
+  <div class="popupmenu">
+    <a href="#" class="closebox"><i class="far fa-times-circle"></i></a>
+    <h1>Musical Zodiac signs<br>By Yuhui Cheng</h1>
+    <h2>Game introduction:</h2>
+    <ul>
+			<li>1. Choose the animal which you like.</li>
+			<li>2. Drag chosen animal to the cloud.</li>
+			<li>3. Listen and enjoy it.</li>
+			<li>Reset: Use the the button on the top left.</li>
+    </ul>
+  </div>
     <main>
+       <header></header>
 
-      <div id="grid"><img src="images/grid.png" width="355" height="390" alt="grid">
+        <section id="row1">
+        <h2 class="hidden">row1</h2>
+				<div class="zodiac">
 
-      <section id="original-area">
+					<img id="mouse" data-drop="0" src="images/mouse.png" alt="mouse" width="80" height="50" draggable="true">
 
-      <div class="zodiac-signs">
-        <img id="mouse" src="images/mouse.png" alt="1" width="80" height="50">
-        <img id="cow" src="images/cow.png" alt="2" width="80" height="50">
-        <img id="tiger" src="images/tiger.png" alt="3" width="80" height="50">
-        <img id="rabbit" src="images/rabbit.png" alt="4" width="80" height="50">
-        <img id="dragon" src="images/dragon.png" alt="5" width="80" height="50">
-        <img id="snake" src="images/snake.png" alt="6" width="80" height="50">
-        <img id="horse" src="images/horse.png" alt="7" width="80" height="50">
-        <img id="sheep" src="images/sheep.png" alt="8" width="80" height="50">
-        <img id="monkey" src="images/monkey.png" alt="9" width="80" height="50">
-        <img id="chicken" src="images/chicken.png" alt="10" width="80" height="50">
-        <img id="dog" src="images/dog.png" alt="11" width="80" height="50">
-        <img id="pig" src="images/pig.png" alt="12" width="80" height="50">
-      </div>
+					<img id="cow" data-drop="1" src="images/cow.png" alt="cow" width="80" height="50" draggable="true">
 
-    </section>
+					<img id="tiger" data-drop="2" src="images/tiger.png" alt="tiger" width="80" height="50" draggable="true">
 
-      <div id="dropzone">
-        <div class="drop1"></div>
-        <div class="drop2"></div>
-        <div class="drop3"></div>
+					<img id="rabbit" data-drop="3" src="images/rabbit.png" alt="rabbit" width="80" height="50" draggable="true">
 
-      </div>
-      </div>
+					<img id="dragon" data-drop="4" src="images/dragon.png" alt="dragon" width="80" height="50" draggable="true">
 
-    </main>
+					<img id="snake" data-drop="5" src="images/snake.png" alt="snake" width="80" height="50" draggable="true">
 
-    <script src="js/main/js"></script>
-  </body>
+					<img id="horse" data-drop="6" src="images/horse.png" alt="horse" width="80" height="50" draggable="true">
+
+					<img id="sheep" data-drop="7" src="images/sheep.png" alt="sheep" width="80" height="50" draggable="true">
+
+					<img id="monkey" data-drop="8" src="images/monkey.png" alt="monkey" width="80" height="50" draggable="true">
+
+					<img id="chicken" data-drop="9" src="images/chicken.png" alt="chicken" width="80" height="50" draggable="true">
+
+					<img id="dog" data-drop="10" src="images/dog.png" alt="dog" width="80" height="50" draggable="true">
+
+					<img id="pig" data-drop="11" src="images/pig.png" alt="pig" width="80" height="50" draggable="true">
+
+				</div>
+
+		   </section>
+
+  <img id="cloud" src="images/cloud.png" alt="cloud">
+        <div id="dropzone">
+
+            <div class="drop1"></div>
+            <div class="drop2"></div>
+            <div class="drop3"></div>
+		    </div>
+        </div>
+
+  <audio data-drop="0" src="audio/FX4.wav"></audio>
+  <audio data-drop="1" src="audio/Synth1.wav"></audio>
+  <audio data-drop="2" src="audio/Loop1.wav"></audio>
+  <audio data-drop="3" src="audio/Whoosh1.wav"></audio>
+  <audio data-drop="4" src="audio/FX1.wav"></audio>
+  <audio data-drop="5" src="audio/Pad5.wav"></audio>
+  <audio data-drop="6" src="audio/Bassline6.wav"></audio>
+  <audio data-drop="7" src="audio/Drumloop8.wav"></audio>
+  <audio data-drop="8" src="audio/Drumloop4.wav"></audio>
+  <audio data-drop="9" src="audio/Drumloop10.wav"></audio>
+  <audio data-drop="10" src="audio/Ghosthack Drum Loop 140 Full.wav"></audio>
+  <audio data-drop="11" src="audio/Ghosthack Drum Loop 150 Snare.wav"></audio>
+
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
 </html>

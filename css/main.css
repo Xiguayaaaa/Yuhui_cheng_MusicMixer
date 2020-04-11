@@ -1,30 +1,36 @@
 html
 {
-  font-family: ;
-  font-size: ;
-  background-image: url(../images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+    font-family: "Indie Flower";
+    font-size: 16px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hidden
+{
+    display: none;
 }
 
 #reset
 {
-  background: url(../images/reset.png) center no-repeat;
-  width: 80px;
-  height: 80px;
-  border: none;
-  background-size: cover;
-  position: relative;
+    background: url(../images/reset.png) center no-repeat;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-size: cover;
+    position: relative;
 }
+
 
 #popup
 {
- background: url(../images/information.png) center no-repeat;
- background-size: cover;
- width: 80px;
- height: 80px;
- position: relative;
- border: none;
+    background: url(../images/information.png) center no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: none;
 }
 
 #reset:hover, #popup:hover
@@ -32,76 +38,121 @@ html
     cursor: pointer;
 }
 
+#reset h1
+{
+    display:none;
+}
+
 .popupmenu
 {
-  width: 60%;
-  height: auto;
-  position: fixed;
-  top: 10%;
-  background-color: inherit;
-  display: none;
-  text-align: center;
+    width: 70%;
+    height: 70%;
+    position: fixed;
+    left: 15%;
+    top: 15%;
+    background-color: #E6FFFB;
+    z-index: 10;
+    display: none;
+    text-align: center;
 }
 
 .popupmenu h1
 {
-  font-size: 5em;
-  color: inherit;
-  margin: 0 auto;
+    font-size: 4em;
+    color: #000;
+    margin: 30px 0;
 }
 
 .popupmenu h2
 {
-  font-size: 3.5em;
+    font-size: 3em;
 }
 
-.popupmenu
+.popupmenu ul
 {
-  font-size: 2em;
-  width: 60%;
-  margin: 0 auto;
-  text-align: left;
+    font-size: 2em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.closebox{
-  float: right;
-  font-size: 50px;
-  margin: 10px 10px 0px 0px;
-  color: #aaaaaa;
+.show-popupmenu
+{display: block;}
+
+.closebox
+{
+    float:right;
+    font-size: 50px;
+    margin: 10px 10px 0px 0px;
+    color: #ffffff;
 }
+
 
 main
 {
-  text-align: center;
-  margin: 0 auto;
+    width: 400px;
+    margin: 0 auto;
 }
 
-#grid
+.zodiac
 {
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin-top: -115px;
 }
 
-#original-area
+.zodiac img
 {
-  width: 400px;
-  position: absolute;
-  display: flex;
-  top: 250px;
-  margin: 0 auto;
-  left: 43.6%;
+    padding: 0px 10px 12px 10px;
+    margin: 0px 20px 5px 5px;
+    cursor: pointer;
 }
 
-.zodiac-signs
+.zodiac img:hover
 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 370px;
-  padding: 0;
-  margin-top: -160px;
+    transform: rotate(320deg);
+    -moz-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    -webkit-transform: rotate(320deg);
+    opacity: .5;
 }
 
-.zodiac-signs img
+
+#dropzone
 {
-  padding-right: 5px;
-  margin-top: 3px;
+	   width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 580px;
+    margin-left: 23px;
 }
+
+#cloud
+{
+  width: 650px;
+  height: 150px;
+  margin-top: 400px;
+}
+
+#row1
+{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 277px;
+    margin-left: 35px;
+}
+
+.delta-mud
+{
+    width:70px;
+    height: 150px;
+}
+
+
+#dropzone img
+{ width: 80px ! important;
+height: 50px ! important; }
