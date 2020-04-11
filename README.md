@@ -1,4 +1,4 @@
-This is my design about Music Mixer.
-I have almost completed the framework of css and html.
-I am working about js now， and studying how to drag and drop.
-I still not add my audio files. I'll push this as soon as possible.
+#Music Mixer
+####By Yuhui Cheng
+##Design idea
+####The zodiac is  famous in China. So I choose they pictures to do this homework. And try to select audio with animal characteristics. Like snake, his audio sounds dangerous. Like rabbit, his audio sounds very fast.
